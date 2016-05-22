@@ -11,7 +11,7 @@ describe('reducer', () => {
 			state: Map({
 				vote: Map({
 					pair: List.of('Trainspotting', '28 Days Later'),
-					tally: Map({Trainspotting})
+					tally: Map({Trainspotting: 1})
 				})
 			})
 		}
@@ -26,10 +26,10 @@ describe('reducer', () => {
 	})
 
 	it('handles SET_STATE with plain JS payload', () => {
-		const intialState = Map()
+		const initialState = Map()
 		const action = {
 			type: 'SET_STATE',
-			state : {
+			state :{
 				vote: {
 					pair: ['Trainspotting', '28 Days Later'],
 					tally: {Trainspotting: 1}
