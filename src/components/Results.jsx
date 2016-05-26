@@ -6,15 +6,15 @@ import Tally from './Tally'
 
 export const Results =  React.createClass({
 	mixins: [PureRenderMixin],
-	getPair: function(){
-		return this.props.pair || []
-	},
-	getVotes: function(entry){
-		if(this.props.tally && this.props.tally.has(entry)){
-			return this.props.tally.get(entry)
-		}
-		return 0
-	},
+	// getPair: function(){
+	// 	return this.props.pair || []
+	// },
+	// getVotes: function(entry){
+	// 	if(this.props.tally && this.props.tally.has(entry)){
+	// 		return this.props.tally.get(entry)
+	// 	}
+	// 	return 0
+	// },
 	render: function() {
 		return (
 			this.props.winner ?
