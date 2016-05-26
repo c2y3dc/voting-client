@@ -27,7 +27,7 @@ const routes = (
 )
 
 ReactDOM.render(
-	<Provider>
+	<Provider store={store}>
 		<Router history={hashHistory}>{routes}</Router>
 	</Provider>,
 	document.getElementById('app')
