@@ -88,7 +88,7 @@ describe('reducer', () => {
 	it('does note set hasVoted for VOTE on invalid entry', () => {
 		const state = fromJS({
 			vote: {
-				pair: ['Trainspotting', '28 Day Later'],
+				pair: ['Trainspotting', '28 Days Later'],
 				tally: {Trainspotting: 1}
 			}
 		})
