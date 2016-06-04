@@ -18,7 +18,6 @@ socket.on('state', state =>
 const createStoreWithMiddleware = applyMiddleware(
 	remoteActionMiddleware(socket)
 )(createStore)
-
 const store = createStoreWithMiddleware(reducer)
 
 const routes = (
