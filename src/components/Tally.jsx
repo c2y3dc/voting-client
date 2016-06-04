@@ -14,7 +14,7 @@ export default React.createClass({
 	},
 	getNext:function(){
 		if(this.props.next){
-			this.props.next()
+			return this.props.next
 		}
 	},
 	render: function(){
