@@ -21,15 +21,18 @@
   },
   "homepage": "https://github.com/c2y3dc/voting-client#readme",
   "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.9.0",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "chai": "^3.5.0",
     "chai-immutable": "^1.5.4",
+    "css-loader": "^0.23.1",
     "jsdom": "^9.1.0",
     "mocha": "^2.4.5",
     "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
   },
@@ -40,6 +43,7 @@
     ]
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "immutable": "^3.8.1",
     "react": "^15.0.2",
     "react-addons-pure-render-mixin": "^15.0.2",
