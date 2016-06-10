@@ -14,6 +14,9 @@ export const Results =  React.createClass({
       <div className="results">
 				<Tally pair={this.props.pair} tally={this.props.tally} />
 	      <div className="management">
+	        <button ref="restart" onClick={this.props.restart}>
+	          Restart
+	        </button>	        
 	        <button ref="next" className="next" onClick={this.props.next}>
 	          Next
 	        </button>
